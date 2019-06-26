@@ -10,4 +10,9 @@
     -moz-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    background-image: linear-gradient(-90deg,#aa8ef5, #ec9ee7);
+}
+
+.google{
+    padding: 10px;
 }

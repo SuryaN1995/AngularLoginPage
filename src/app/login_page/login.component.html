@@ -24,6 +24,15 @@
         <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
     </mat-card-content>
     <mat-card-actions>
-        <button mat-raised-button (click)="login()" color="primary">Login</button>
+        <table>
+            <tr>
+                    <button mat-raised-button (click)="login()" >Login</button>
+            </tr>
+            <tr>
+                <div class="google">
+                    <button mat-raised-button (click)="login()"> <img src="../assets/g-normal.png">Sign in with Google</button>
+                </div>                
+            </tr>
+        </table>
     </mat-card-actions>
 </mat-card>
