@@ -8,12 +8,14 @@ import { UserComponent } from './user/user.component';
 import { CustomMaterialModule } from './material.module';
 import {FormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {GoogleSignInComponent} from 'angular-google-signin';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    UserComponent
+    UserComponent,
+    GoogleSignInComponent
   ],
   imports: [
     BrowserModule,

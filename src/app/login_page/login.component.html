@@ -15,7 +15,8 @@
                 <tr>
                     <td>
                         <mat-form-field class="example-full-width">
-                            <input matInput placeholder="Password" [(ngModel)]="password" type="password" name="password" required>
+                            <input matInput placeholder="Password" [(ngModel)]="password" type="password"
+                                name="password" required>
                         </mat-form-field>
                     </td>
                 </tr>
@@ -26,12 +27,12 @@
     <mat-card-actions>
         <table>
             <tr>
-                    <button mat-raised-button (click)="login()" >Login</button>
+                <button mat-raised-button (click)="login()">Login</button>
             </tr>
             <tr>
-                <div class="google">
-                    <button mat-raised-button (click)="login()"> <img src="../assets/g-normal.png">Sign in with Google</button>
-                </div>                
+                <google-signin [clientId]="myClientId" [width]="myWidth" [theme]="myTheme" [scope]="myScope"
+                    [longTitle]="myLongTitle" (googleSignInSuccess)="onGoogleSignInSuccess($event)">
+                </google-signin>
             </tr>
         </table>
     </mat-card-actions>
